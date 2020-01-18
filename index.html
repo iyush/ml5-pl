@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="libs/p5.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <meta charset="utf-8" />
+    <script src="sketch.js"></script>
+
+    <style>
+        #dropzone {
+            text-align: center;
+            padding: 24px;
+            margin: auto;
+            border-style: dashed;
+            font-size: 36pt;
+            width: 50%;
+        }
+
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        #sketch-holder {
+            margin: 0 auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>ML5 Image Classification</h1>
+        <p id="dropzone">
+            Drag image Here.
+        </p>
+        <p id="classify">
+            <span id="nameOfClassification"> </span>
+            <span id="probofClassification"> </span>
+         </p>
+        <div id="sketch-holder">
+
+        </div>
+    </div>
+</body>
+
+</html>
